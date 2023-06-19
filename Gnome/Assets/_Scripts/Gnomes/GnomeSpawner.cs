@@ -38,6 +38,8 @@ public class GnomeSpawner : MonoBehaviour
             int ran = Random.Range(0, gnomeToSpawn.gnomePrefabs.Count);
 
             GameObject newGnome = Instantiate(gnomeToSpawn.gnomePrefabs[ran], gnomeSpawns[i]);
+
+            newGnome.GetComponent<GnomeObject>().gnome = gnomeToSpawn;
         }
     }
 
