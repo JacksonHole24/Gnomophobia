@@ -200,6 +200,11 @@ MonoBehaviour:
         m_Center: {x: 0.005727291, y: 0.5250117, z: -0.39030027}
         m_Extent: {x: 4.3562183, y: 1.1872373, z: 2.6691647}
       perAnchorNormalsAngle:
+      - 306.89792
+      - 322.94458
+      - 273.45068
+      - 312.419
+      - 343.00674
       - 0
       - 0
       - 0
@@ -207,12 +212,7 @@ MonoBehaviour:
       - 0
       - 0
       - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      globalNormalsAngle: 69
+      globalNormalsAngle: 138
       flipNormals: 0
     vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
@@ -231,7 +231,7 @@ MonoBehaviour:
     showPathOptions: 1
     showVertexPathDisplayOptions: 0
     showVertexPathOptions: 1
-    showNormals: 0
+    showNormals: 1
     showNormalsHelpInfo: 0
     tabIndex: 0
   initialized: 1
@@ -309,6 +309,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23463250516226866, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4a612d37ce8aec4184aa2d1795935c9, type: 2}
+    - target: {fileID: 23486494810615104, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2227daaa7ee6594ba4c4766b1b53250, type: 2}
+    - target: {fileID: 23616845451545226, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b15893b966efca4db3457c1e683d056, type: 2}
+    - target: {fileID: 23648042348708658, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b15893b966efca4db3457c1e683d056, type: 2}
+    - target: {fileID: 23998214817209668, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db927b4d48a1a674db22601271efcd5a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
 --- !u!1 &1308570505
