@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9ffaa2e3ea22e42a2511c5ddee205e, type: 3}
+  m_Name: Basic Gnome
+  m_EditorClassIdentifier: 
+  gnomeType: Basic
+  gnomePrefabs:
+  - {fileID: 1095056803865714564, guid: 322f257bb1d29ee4ba6d3d668dd6b9ec, type: 3}
+  - {fileID: 1580926431076821969, guid: afb7162f8ad68a147adafd9f52d0837d, type: 3}
+  gnomeValue: 5
+  losesPoints: 0
+  gnomeWeight: 100

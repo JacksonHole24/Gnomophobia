@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9ffaa2e3ea22e42a2511c5ddee205e, type: 3}
+  m_Name: Golden Gnome
+  m_EditorClassIdentifier: 
+  gnomeType: Golden
+  gnomePrefabs:
+  - {fileID: 1750147056897906266, guid: 0236a50b5f373e7408aca1659bcdf723, type: 3}
+  gnomeValue: 20
+  losesPoints: 0
+  gnomeWeight: 5
