@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class GnomeObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [HideInInspector] public Gnome gnome;
 
-    // Update is called once per frame
-    void Update()
+    public void Break()
     {
         
     }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6632301192707883735}
   - component: {fileID: 2971583757513606927}
   - component: {fileID: 7657492083226777714}
+  - component: {fileID: -8524989255565996319}
   m_Layer: 0
   m_Name: Evil Gnome
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7110786768735062622, guid: 3c68f46bdf58dea438d1e7d57a0adb01, type: 3}
+--- !u!114 &-8524989255565996319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5684939054875134539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058ebfcfb7ad18d42a8a5f66ee618674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gnome: {fileID: 0}
