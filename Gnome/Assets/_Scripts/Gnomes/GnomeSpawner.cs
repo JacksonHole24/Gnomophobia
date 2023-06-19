@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class GnomeSpawner : MonoBehaviour
 {
@@ -74,5 +75,14 @@ public class GnomeSpawner : MonoBehaviour
         // If no gnome is selected, return null or handle the case as appropriate
         Debug.LogError("No Gnome Was Selected");
         return null;
+    }
+
+    private void OnDrawGizmos()
+    {
+        foreach (Transform gnome in transform)
+        {
+            Gizmos.DrawWireSphere(gnome.position, 0.3f);
+        }
+        
     }
 }
