@@ -512,31 +512,6 @@ Transform:
   m_Father: {fileID: 1848127802}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &1609095958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5951011668623321936, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-  m_PrefabInstance: {fileID: 4784744958564276692}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1609095959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609095958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1658948785
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,24 +714,8 @@ PrefabInstance:
       value: Directional Light
       objectReference: {fileID: 0}
     - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-      propertyPath: m_Color.b
-      value: 0.4716981
-      objectReference: {fileID: 0}
-    - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-      propertyPath: m_Color.g
-      value: 0.41942966
-      objectReference: {fileID: 0}
-    - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-      propertyPath: m_Color.r
-      value: 0.33152366
-      objectReference: {fileID: 0}
-    - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
       propertyPath: m_Intensity
-      value: 0.36
+      value: 8.93
       objectReference: {fileID: 0}
     - target: {fileID: 5951011668623321938, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
       propertyPath: m_RootOrder
