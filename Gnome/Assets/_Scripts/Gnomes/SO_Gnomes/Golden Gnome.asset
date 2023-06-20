@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gnomeType: Golden
   gnomePrefabs:
-  - {fileID: 6336117631142641205, guid: b48f6e48d91e39e479ce4aa2492389cd, type: 3}
+  - {fileID: 6336117631142641205, guid: 7ed3e020544f5904a8ddeb7e0c39ec34, type: 3}
   gnomeValue: 20
   losesPoints: 0
   gnomeWeight: 10
