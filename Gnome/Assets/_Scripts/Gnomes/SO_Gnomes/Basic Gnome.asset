@@ -15,7 +15,7 @@ MonoBehaviour:
   gnomeType: Basic
   gnomePrefabs:
   - {fileID: 1095056803865714564, guid: 322f257bb1d29ee4ba6d3d668dd6b9ec, type: 3}
-  - {fileID: 1580926431076821969, guid: afb7162f8ad68a147adafd9f52d0837d, type: 3}
+  - {fileID: 1580926431076821969, guid: e3e3f649f46e62241b5fd8be437d091e, type: 3}
   gnomeValue: 5
   losesPoints: 0
   gnomeWeight: 100

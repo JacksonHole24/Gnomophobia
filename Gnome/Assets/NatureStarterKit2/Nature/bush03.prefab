@@ -102,7 +102,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Bark Material
-  m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: -6465566751694194690, guid: aa6663de77e9ce04d96f600b02434771, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
@@ -114,23 +114,61 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Normal_vegetation:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpSpecMap:
         m_Texture: {fileID: 2800000, guid: 3d94ae574d920c5449fe4e032d8c414d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bafd27072aee8654485c538f80de7dd8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 22609390853b890418e559ceb8b76a47, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
         m_Texture: {fileID: 2800000, guid: 5aa3e304ca031934dab7713a359e61c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - mask_vegetation:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_3f7fc101151e4131b707a42791e97a87: 0
+    - Boolean_7f51b6a6c137435996ce0b2d7c13b749: 0
+    - Normal_intensity_vegetation: 1
+    - Vector1_16F2F1E4: 0
+    - Vector1_813F3AD6: 0
+    - Vector1_DDCDCAD2: 0
+    - Vector1_a236a00b81304534a1dc773a4479b86f: -1
+    - Vector1_dca4500ac6ca444db393442befd64c12: 0
     - _Cutoff: 0.3
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _SquashAmount: 1
+    - _cutoff: 0.25
+    - bend_vegetation: 0.05
+    - turbulence_vegetation: 0.8
+    - wind_speed_vegetation: 0.5
+    - wind_vegetation: 1
     m_Colors:
+    - Vector2_82B1CCC: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_886dfdfc26f649d58647efaaa9da1145: {r: -1.5, g: 2, b: 0, a: 0}
+    - Vector3_8df6f0d427cb4bed9ab0ed9fd7ef1f3d: {r: 1, g: 0, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
@@ -144,7 +182,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Leaf Material
-  m_Shader: {fileID: 10605, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: -6465566751694194690, guid: 0ee7d7421b85b65448c87cdc62c1dc5c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
@@ -156,12 +194,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Normal_vegetation:
+        m_Texture: {fileID: 2800000, guid: e5b7d9ca36dab8947b5c9012d48ed719, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpSpecMap:
         m_Texture: {fileID: 2800000, guid: 3d94ae574d920c5449fe4e032d8c414d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bafd27072aee8654485c538f80de7dd8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 22609390853b890418e559ceb8b76a47, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
@@ -172,14 +214,55 @@ Material:
         m_Texture: {fileID: 2800000, guid: 5aa3e304ca031934dab7713a359e61c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - mask_vegetation:
+        m_Texture: {fileID: 2800000, guid: 3c61102cb1822954e8ff946394880c8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_3f7fc101151e4131b707a42791e97a87: 0
+    - Boolean_5d00527b3b684cbb96b368d7d4a87861: 0
+    - Boolean_8f05bfb3c582445c93d235ec658586eb: 0
+    - Normal_intensity_vegetation: 1
+    - Vector1_16F2F1E4: 0
+    - Vector1_1e8cbc9d6438468987568852e20507fe: 0
+    - Vector1_75aa5bc7e21e4586994ff9264c97ec84: 0
+    - Vector1_813F3AD6: 0
+    - Vector1_82f64464d37b4a1db58d85694d73429c: 0
+    - Vector1_9d08a8daf91945c08a536cac44a65abc: 0.5
+    - Vector1_DDCDCAD2: 0
+    - Vector1_a236a00b81304534a1dc773a4479b86f: -1
+    - Vector1_b64466b3c71c4e21b3eee17260cb70f3: 0
     - _Cutoff: 0.3
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _ShadowOffsetScale: 1
     - _ShadowStrength: 0.8
     - _SquashAmount: 1
     - _TranslucencyViewDependency: 0.7
+    - _cutoff: 0.25
+    - bend_vegetation: 0.05
+    - turbulence_vegetation: 0
+    - wind_speed_vegetation: 0
+    - wind_vegetation: 1
     m_Colors:
+    - Vector2_08a82e0e13154010b31c543aff7192b4: {r: 0.5, g: 1, b: 0, a: 0}
+    - Vector2_82B1CCC: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_fef41d8fdb394bab92fa6a65ad93b844: {r: -1.5, g: 2, b: 0, a: 0}
+    - Vector3_32a9de8205ce41559c900c00e8c69e32: {r: 0, g: 1, b: 0, a: 0}
+    - Vector3_8df6f0d427cb4bed9ab0ed9fd7ef1f3d: {r: 1, g: 0, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
@@ -372,7 +455,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 107
-  materialHash: 55c3d4eafd6ae7a0e0c934c12101f9a1215482368
+  materialHash: d3f26be6e6b58541194d0a1d9161004f215482368
   root:
     _uniqueID: 1
     seed: 1234
@@ -474,17 +557,17 @@ MonoBehaviour:
     rootSpread: 5
     groundOffset: 0
     rootMatrix:
-      e00: 0.58479106
-      e01: -0
-      e02: 0.8111839
+      e00: -0.95035976
+      e01: 0
+      e02: 0.31115332
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: -0.811184
+      e20: -0.31115332
       e21: 0
-      e22: 0.58479106
+      e22: -0.9503597
       e23: 0
       e30: 0
       e31: 0
@@ -848,17 +931,17 @@ MonoBehaviour:
     pitch: -0
     rotation: {x: 0, y: 0, z: 0, w: 1}
     matrix:
-      e00: 0.58479106
-      e01: -0
-      e02: 0.8111839
+      e00: -0.95035976
+      e01: 0
+      e02: 0.31115332
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: -0.811184
+      e20: -0.31115332
       e21: 0
-      e22: 0.58479106
+      e22: -0.9503597
       e23: 0
       e30: 0
       e31: 0
