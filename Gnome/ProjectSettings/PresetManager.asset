@@ -4,6 +4,7 @@
 PresetManager:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_DefaultPresets:
   - first:
       m_NativeTypeID: 114
@@ -16,3 +17,6 @@ PresetManager:
     - m_Preset: {fileID: 2655988077585873504, guid: 1421ad86ff3787b4dae70fe9e699a25f, type: 2}
       m_Filter: Right
       m_Disabled: 0
+=======
+  m_DefaultPresets: {}
+>>>>>>> origin/LillyBranch

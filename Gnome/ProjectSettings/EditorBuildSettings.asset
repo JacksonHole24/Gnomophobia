@@ -5,7 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
+<<<<<<< HEAD
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1d0cfe301d341794585d1100ccd4d9b5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 808b5be33cd222c449706818141049db, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ad96209e9ab04944a8aa58d4bc68bb2c, type: 2}
+=======
+  m_configObjects: {}
+>>>>>>> origin/LillyBranch
