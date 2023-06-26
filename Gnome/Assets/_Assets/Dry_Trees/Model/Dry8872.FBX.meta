@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: f23ed20623592014dae86a86483b4d61
+guid: 9d9a2868cd321ba4a90fb64be4b73abd
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark
+    second: {fileID: 2100000, guid: 14f732f9f0a9e3d408764155dadf8518, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.74
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -47,7 +52,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -68,7 +73,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 153
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
@@ -88,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.018796
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
