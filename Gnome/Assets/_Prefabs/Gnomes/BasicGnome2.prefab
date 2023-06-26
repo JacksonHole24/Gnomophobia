@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4115005736022073924}
   - component: {fileID: 4146146609885717532}
   - component: {fileID: 2477314199577777108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BasicGnome2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ GameObject:
   - component: {fileID: 8468387582767431382}
   - component: {fileID: 4767651978465603955}
   - component: {fileID: 7336061973675738553}
-  m_Layer: 0
-  m_Name: sketchfabTemp.obj
+  m_Layer: 3
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5543532131952041952}
   - component: {fileID: 7713085422861544233}
   - component: {fileID: 4973839018858971406}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GoldenGnome
   m_TagString: Untagged
   m_Icon: {fileID: 0}

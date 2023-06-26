@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 322496591103132990}
   - component: {fileID: 2159842549851082260}
   - component: {fileID: -8129070110217382955}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BasicGnome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ GameObject:
   - component: {fileID: 867374771517994086}
   - component: {fileID: 2656745127448743212}
   - component: {fileID: 1583892400579160504}
-  m_Layer: 0
-  m_Name: default
+  m_Layer: 3
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

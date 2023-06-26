@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2971583757513606927}
   - component: {fileID: 7657492083226777714}
   - component: {fileID: -8524989255565996319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Evil Gnome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
