@@ -1719,6 +1719,10 @@ PrefabInstance:
       propertyPath: m_shootInputAction
       value: 
       objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_reloadInputAction
+      value: 
+      objectReference: {fileID: 7896482121097324676, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 7578468783896679931, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -1793,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_shootInputAction
       value: 
       objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_reloadInputAction
+      value: 
+      objectReference: {fileID: -391782849341435544, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 7578468783896679931, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
