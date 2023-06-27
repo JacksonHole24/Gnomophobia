@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c664af2138106949aa0d0cf738ffa47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fireRate: 1
+  m_fireRate: 5
   m_bulletSpawnPoint: {fileID: 5228253694705915048}
   m_shootingParticle: {fileID: 5534099452712844301}
   m_impactParticle: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
@@ -508,6 +508,7 @@ MonoBehaviour:
   m_layerMask:
     serializedVersion: 2
     m_Bits: 0
+  m_shootInputAction: {fileID: 0}
 --- !u!1 &1778776706986478742
 GameObject:
   m_ObjectHideFlags: 0

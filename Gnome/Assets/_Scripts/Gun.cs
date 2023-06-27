@@ -48,7 +48,7 @@ public class Gun : MonoBehaviour
             m_shootingParticle.Play();
 
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, float.MaxValue, m_layerMask))
+            if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out hit, float.MaxValue, m_layerMask))
             {
                 Debug.Log("Object hit: " + hit.transform);
                 TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
@@ -60,6 +60,12 @@ public class Gun : MonoBehaviour
                     
 
                 }
+            }
+            else
+            {
+                TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
+
+                StartCoroutine(SpawnTrail(trail, hit));
             }
         }
     }
@@ -80,6 +86,26 @@ public class Gun : MonoBehaviour
         m_animator.SetBool("IsShooting", false);
         Trail.transform.position = Hit.point;
         Instantiate(m_impactParticle, Hit.point, Quaternion.LookRotation(Hit.normal));
+
+        Destroy(Trail.gameObject, Trail.time);
+    }
+
+    IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 Point, Vector3 Normal = new Vector3(int.MaxValue, int.MaxValue, int.MaxValue))
+    {
+        float time = 0;
+        Vector3 startPosition = Trail.transform.position;
+
+        while (time < 1)
+        {
+            Trail.transform.position = Vector3.Lerp(startPosition, Point, time);
+            time += Time.deltaTime / Trail.time;
+
+            yield return null;
+        }
+
+        m_animator.SetBool("IsShooting", false);
+        Trail.transform.position = Point;
+        Instantiate(m_impactParticle, Point, Quaternion.LookRotation(Hit.normal));
 
         Destroy(Trail.gameObject, Trail.time);
     }
