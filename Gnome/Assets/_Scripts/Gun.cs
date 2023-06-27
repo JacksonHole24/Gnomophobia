@@ -65,7 +65,7 @@ public class Gun : MonoBehaviour
             {
                 TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
 
-                StartCoroutine(SpawnTrail(trail, hit));
+                StartCoroutine(SpawnTrail(trail, m_bulletSpawnPoint.forward * 100));
             }
         }
     }
@@ -90,7 +90,7 @@ public class Gun : MonoBehaviour
         Destroy(Trail.gameObject, Trail.time);
     }
 
-    IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 Point, Vector3 Normal = new Vector3(int.MaxValue, int.MaxValue, int.MaxValue))
+    IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 Point)
     {
         float time = 0;
         Vector3 startPosition = Trail.transform.position;
@@ -105,7 +105,6 @@ public class Gun : MonoBehaviour
 
         m_animator.SetBool("IsShooting", false);
         Trail.transform.position = Point;
-        Instantiate(m_impactParticle, Point, Quaternion.LookRotation(Hit.normal));
 
         Destroy(Trail.gameObject, Trail.time);
     }
