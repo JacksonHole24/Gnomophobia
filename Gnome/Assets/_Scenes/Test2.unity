@@ -546,30 +546,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin
       objectReference: {fileID: 0}
-    - target: {fileID: 6030449004940407714, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_fireRate
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6030449004940407714, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_layerMask.m_Bits
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6030449004940407714, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_shootInputAction
-      value: 
-      objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    - target: {fileID: 8335727507734355928, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_fireRate
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8335727507734355928, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_layerMask.m_Bits
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8335727507734355928, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
-      propertyPath: m_shootInputAction
-      value: 
-      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
 --- !u!1 &259748767
@@ -3330,7 +3306,7 @@ PrefabInstance:
       objectReference: {fileID: 528701635}
     - target: {fileID: 692435670, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
       propertyPath: currentSpeed
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1576909240372392, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
       propertyPath: m_Name

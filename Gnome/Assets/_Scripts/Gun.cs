@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,7 +10,11 @@ public class Gun : MonoBehaviour
     [SerializeField] float m_fireRate = 1; // Shots per second
     float m_cooldownTimer;
 
+    [SerializeField] bool m_showLazerSight;
+    GameObject m_lazerPoint;
+
     Animator m_animator;
+
 
     [SerializeField] Transform m_bulletSpawnPoint;
     [SerializeField] ParticleSystem m_shootingParticle, m_impactParticle;
@@ -34,14 +39,26 @@ public class Gun : MonoBehaviour
         {
             m_cooldownTimer += Time.deltaTime * m_fireRate;
         }
+
+        if (m_showLazerSight)
+        {
+            if (m_lazerPoint) Destroy(m_lazerPoint);
+            RaycastHit hit;
+            if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out hit, float.MaxValue, m_layerMask))
+            {
+                m_lazerPoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                m_lazerPoint.GetComponent<MeshRenderer>().material.color = Color.red;
+                m_lazerPoint.transform.position = hit.point;
+                m_lazerPoint.layer = 1 << 2;
+            }
+        }
+        
     }
 
     public void Shoot(InputAction.CallbackContext context)
     {
         if (!OnCooldown())
         {
-            Debug.Log("Shot");
-            
             m_cooldownTimer = 0;
 
             m_animator.SetBool("IsShooting", true);
@@ -65,7 +82,7 @@ public class Gun : MonoBehaviour
             {
                 TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
 
-                StartCoroutine(SpawnTrail(trail, m_bulletSpawnPoint.forward * 100));
+                StartCoroutine(SpawnTrail(trail, m_bulletSpawnPoint.position + (m_bulletSpawnPoint.forward * 100)));
             }
         }
     }
