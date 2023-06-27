@@ -117,7 +117,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Leaf Material
-  m_Shader: {fileID: -6465566751694194690, guid: 0ee7d7421b85b65448c87cdc62c1dc5c, type: 3}
+  m_Shader: {fileID: 10605, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
@@ -209,7 +209,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Bark Material
-  m_Shader: {fileID: -6465566751694194690, guid: 0ee7d7421b85b65448c87cdc62c1dc5c, type: 3}
+  m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
@@ -230,7 +230,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f82d7808d61c0fe40ac870b61d38c05f, type: 3}
+        m_Texture: {fileID: 2800000, guid: da4827ac8df28d1439b10b2ec7735a68, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 399
-  materialHash: 7bd91904d8b2a9d4ffc633a531605260215482368
+  materialHash: 2f8d49d0014b9fe9610fc97850bc17e0215482368
   root:
     _uniqueID: 1
     seed: 1234
