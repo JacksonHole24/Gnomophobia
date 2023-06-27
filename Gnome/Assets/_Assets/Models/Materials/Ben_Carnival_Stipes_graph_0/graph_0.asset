@@ -128,7 +128,13 @@ MonoBehaviour:
   EnablePhysicalSize: 0
   Thumbnail: 
   HasThumbnail: 0
-  CurrentStatePreset: 
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Carnival_Stipes\" label=\"\" >\n 
+    <presetinput identifier=\"$outputsize\" uid=\"584056340\" type=\"8\" value=\"10,10\"
+    />\n  <presetinput identifier=\"Stripes_x_amount\" uid=\"1076842686\" type=\"4\"
+    value=\"25\" />\n  <presetinput identifier=\"Grunge_1_scale\" uid=\"1076842523\"
+    type=\"4\" value=\"6\" />\n  <presetinput identifier=\"Grunge_1_disorder\" uid=\"1076842501\"
+    type=\"0\" value=\"0.435\" />\n  <presetinput identifier=\"Grunge_2_disorder\"
+    uid=\"1076842557\" type=\"0\" value=\"0\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
@@ -195,7 +201,7 @@ MonoBehaviour:
           GuiDescription: Amount of patterns on the X axis.
           Type: 4
           WidgetType: 1
-        Data: 4
+        Data: 25
         NumericalDescription:
           DefaultValue: 4
           MinValue: 1
@@ -217,7 +223,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 1
-        Data: 1
+        Data: 6
         NumericalDescription:
           DefaultValue: 1
           MinValue: 1
@@ -239,7 +245,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0.48
+        Data: 0.435
         NumericalDescription:
           DefaultValue: 0.48
           MinValue: 0
@@ -259,7 +265,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0.44
+        Data: 0
         NumericalDescription:
           DefaultValue: 0.44
           MinValue: 0
