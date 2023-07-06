@@ -15684,7 +15684,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1664124067675567591, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1664124066650366744, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
 --- !u!4 &1272057517 stripped
 Transform:
@@ -29738,10 +29743,6 @@ PrefabInstance:
     - target: {fileID: 5951011668623321936, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
       propertyPath: m_Name
       value: Directional Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 5951011668623321937, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
-      propertyPath: m_Intensity
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5951011668623321938, guid: d80f5bbfaa1a48b4cbcb367883679cdb, type: 3}
       propertyPath: m_RootOrder
