@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gnomeType: Evil
   gnomePrefabs:
-  - {fileID: 5684939054875134539, guid: 37985c79627c3814283a59ba3708e983, type: 3}
+  - {fileID: 3110594140502282859, guid: 438d3703c4ef7994c9cc25bd12af95e2, type: 3}
   gnomeValue: 5
   losesPoints: 1
   gnomeWeight: 35
