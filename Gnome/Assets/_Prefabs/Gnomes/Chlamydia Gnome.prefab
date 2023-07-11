@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2333106840914397393}
   - component: {fileID: 1715598616970889076}
   - component: {fileID: 3471132455587771326}
+  - component: {fileID: 3447269254643548155}
+  - component: {fileID: 5398253334400187022}
   m_Layer: 0
   m_Name: Chlamydia Gnome
   m_TagString: Untagged
@@ -83,3 +85,30 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3447269254643548155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110594140502282859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058ebfcfb7ad18d42a8a5f66ee618674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gnome: {fileID: 0}
+--- !u!64 &5398253334400187022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110594140502282859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1491770212225696383, guid: 77271c5ee2463f843b5204f5ef5993b9, type: 3}
