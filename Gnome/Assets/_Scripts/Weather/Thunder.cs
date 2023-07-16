@@ -6,7 +6,7 @@ public class Thunder : MonoBehaviour
 {
     public Light directionalLight;
     public AudioClip[] thunderSounds;
-    public Material skyboxMaterial; // Reference to the skybox material
+    public Material skyboxMaterial;
 
     public float minIntensity = 0.5f;
     public float maxIntensity = 3f;
@@ -23,9 +23,9 @@ public class Thunder : MonoBehaviour
     private bool isFlashing = false;
     private float targetIntensity;
     private float currentIntensity;
-    private float targetExposure; // New variable for lerping exposure
-    private float currentExposure; // Current exposure value
-    private float exposureLerpDuration = 0.2f; // Duration of lerping the exposure
+    private float targetExposure; 
+    private float currentExposure; 
+    private float exposureLerpDuration = 0.2f;
 
     private void Awake()
     {
@@ -54,10 +54,10 @@ public class Thunder : MonoBehaviour
 
                 isFlashing = true;
                 targetIntensity = Random.Range(minIntensity, maxIntensity);
-                targetExposure = 8f; // Set the target exposure to maximum value
+                targetExposure = 8f; 
                 PlayThunderSound();
 
-                // Increase intensity and exposure simultaneously
+               
                 while (currentIntensity < targetIntensity)
                 {
                     currentIntensity += intensityIncreaseSpeed * Time.deltaTime;
@@ -67,23 +67,23 @@ public class Thunder : MonoBehaviour
                     directionalLight.intensity += flickerIntensity;
 
                     float t = Mathf.Clamp01((currentIntensity - minIntensity) / (targetIntensity - minIntensity));
-                    currentExposure = Mathf.Lerp(1.8f, targetExposure, t); // Lerping the exposure value
-                    skyboxMaterial.SetFloat("_Exposure", currentExposure); // Update the exposure value
+                    currentExposure = Mathf.Lerp(1.8f, targetExposure, t); 
+                    skyboxMaterial.SetFloat("_Exposure", currentExposure); 
 
                     yield return null;
                 }
 
                 yield return new WaitForSeconds(exposureLerpDuration);
 
-                // Decrease intensity and exposure simultaneously
+                
                 while (currentIntensity > minIntensity)
                 {
                     currentIntensity -= intensityDecreaseSpeed * Time.deltaTime;
                     directionalLight.intensity = currentIntensity;
 
                     float t = Mathf.Clamp01((currentIntensity - targetIntensity) / (minIntensity - targetIntensity));
-                    currentExposure = Mathf.Lerp(targetExposure, 1.8f, t); // Lerping back to the minimum exposure value
-                    skyboxMaterial.SetFloat("_Exposure", currentExposure); // Update the exposure value
+                    currentExposure = Mathf.Lerp(targetExposure, 1.8f, t); 
+                    skyboxMaterial.SetFloat("_Exposure", currentExposure); 
 
                     yield return null;
                 }
