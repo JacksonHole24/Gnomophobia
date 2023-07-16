@@ -4,9 +4,7 @@ using UnityEngine.Rendering;
 
 public class Thunder : MonoBehaviour
 {
-    public Light directionalLight;
     public AudioClip[] thunderSounds;
-    public Material skyboxMaterial;
 
     public float minIntensity = 0.5f;
     public float maxIntensity = 3f;
@@ -19,6 +17,9 @@ public class Thunder : MonoBehaviour
     public float maxWaitTime = 5f;
     public int simultaneousStrikes = 3;
 
+
+    private Light directionalLight;
+    private Material skyboxMaterial;
     private AudioSource audioSource;
     private bool isFlashing = false;
     private float targetIntensity;
@@ -31,10 +32,8 @@ public class Thunder : MonoBehaviour
     {
         directionalLight = GetComponent<Light>();
         audioSource = GetComponent<AudioSource>();
-        if (RenderSettings.skybox != null)
-        {
-            skyboxMaterial = RenderSettings.skybox;
-        }
+        skyboxMaterial = RenderSettings.skybox;
+
     }
 
     private void Start()
