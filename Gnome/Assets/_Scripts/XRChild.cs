@@ -5,12 +5,11 @@ using UnityEngine;
 public class XRChild : MonoBehaviour
 {
     [SerializeField] Transform m_parent;
-
-    [SerializeField] Vector3 m_localPosition, m_localRotation;//, m_localScale;
+    public Transform GetParent() { return m_parent; }
 
     private void LateUpdate()
     {
-        transform.position = m_parent.position + m_localPosition;
-        transform.rotation = Quaternion.Euler(m_parent.rotation.eulerAngles + m_localRotation);
+        transform.position = m_parent.position;
+        transform.rotation = m_parent.rotation;
     }
 }
