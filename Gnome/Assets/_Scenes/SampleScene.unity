@@ -1787,26 +1787,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5123179519619176415, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123179519688396202, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123179521275645793, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
-      propertyPath: m_TreeDistance
-      value: 633
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123179521275645793, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
-      propertyPath: m_SplatMapDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123179521275645793, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
-      propertyPath: m_DetailObjectDistance
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 6901699295270042722, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
       propertyPath: m_Name
       value: Environment
