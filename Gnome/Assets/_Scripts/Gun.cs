@@ -14,8 +14,9 @@ public class Gun : MonoBehaviour
     [SerializeField] int m_maxAmmoAmount = 15;
     int m_ammoAmount;
 
+    [SerializeField] GameObject m_hitMarkerPrefab;
     [SerializeField] bool m_showLazerSight;
-    GameObject m_lazerPoint;
+    Transform m_lazerPoint;
 
     Animator m_animator;
 
@@ -30,6 +31,7 @@ public class Gun : MonoBehaviour
     [SerializeField] InputActionReference m_reloadInputAction;
 
     Player m_player;
+    bool m_shootNextFrame;
 
     public bool OnCooldown() { return m_cooldownTimer < 1; }
 
@@ -43,6 +45,8 @@ public class Gun : MonoBehaviour
 
         m_shootInputAction.action.performed += Shoot;
         m_reloadInputAction.action.performed += Reload;
+
+        m_lazerPoint = Instantiate(m_hitMarkerPrefab).transform;
     }
 
     private void Update()
@@ -51,20 +55,24 @@ public class Gun : MonoBehaviour
         {
             m_cooldownTimer += Time.deltaTime * m_fireRate;
         }
+    }
 
+    private void LateUpdate()
+    {
         if (m_showLazerSight) DisplayLazerSight();
+
+        if (m_shootNextFrame)
+        {
+            m_shootNextFrame = false;
+            Shoot();
+        }
     }
 
     void DisplayLazerSight()
     {
-        if (m_lazerPoint) Destroy(m_lazerPoint);
-        RaycastHit hit;
-        if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out hit, float.MaxValue, m_layerMask))
+        if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out RaycastHit hit, float.MaxValue, m_layerMask))
         {
-            m_lazerPoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            m_lazerPoint.GetComponent<MeshRenderer>().material.color = Color.red;
-            m_lazerPoint.transform.position = hit.point;
-            m_lazerPoint.layer = 1 << 2;
+            m_lazerPoint.position = hit.point;
         }
     }
 
@@ -85,6 +93,11 @@ public class Gun : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext context)
     {
+        m_shootNextFrame = true;
+    }
+
+    public void Shoot()
+    {
         if (!OnCooldown())
         {
             if (m_ammoAmount > 0)
@@ -97,15 +110,16 @@ public class Gun : MonoBehaviour
                 m_animator.SetBool("IsShooting", true);
                 m_shootingParticle.Play();
 
+                TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
+
                 RaycastHit hit;
                 if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out hit, float.MaxValue, m_layerMask))
                 {
                     Debug.Log("Object hit: " + hit.transform);
-                    TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
 
                     StartCoroutine(SpawnTrail(trail, hit));
 
-                    if (hit.transform?.GetComponent<GnomeObject>())
+                    if (hit.transform.GetComponent<GnomeObject>())
                     {
 
 
@@ -113,13 +127,12 @@ public class Gun : MonoBehaviour
                 }
                 else
                 {
-                    TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
-
                     StartCoroutine(SpawnTrail(trail, m_bulletSpawnPoint.position + (m_bulletSpawnPoint.forward * 100)));
                 }
             }
-            
+
         }
+
     }
 
     IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit)
