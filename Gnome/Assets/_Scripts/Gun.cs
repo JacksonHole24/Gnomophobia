@@ -30,6 +30,11 @@ public class Gun : MonoBehaviour
     [SerializeField] InputActionReference m_shootInputAction;
     [SerializeField] InputActionReference m_reloadInputAction;
 
+    [SerializeField] AudioClip noAmmo;
+    [SerializeField] AudioClip reload;
+    [SerializeField] AudioSource source;
+    [SerializeField] GameObject reloadIenti;
+
     Player m_player;
     bool m_shootNextFrame;
 
@@ -91,6 +96,9 @@ public class Gun : MonoBehaviour
             m_player.RemoveAmmo(1);
             m_ammoAmount = m_maxAmmoAmount;
             DisplayAmmo();
+            source.clip = reload;
+            source.Play();
+            reloadIenti.SetActive(false);
         }
     }
 
@@ -113,6 +121,8 @@ public class Gun : MonoBehaviour
                 m_animator.SetBool("IsShooting", true);
                 m_shootingParticle.Play();
 
+                GetComponent<SoundPlayer>().Play();
+
                 TrailRenderer trail = Instantiate(m_bulletTrail, m_bulletSpawnPoint.position, Quaternion.identity);
 
                 RaycastHit hit;
@@ -133,6 +143,12 @@ public class Gun : MonoBehaviour
                 {
                     StartCoroutine(SpawnTrail(trail, m_bulletSpawnPoint.position + (m_bulletSpawnPoint.forward * 100)));
                 }
+            }
+            else
+            {
+                source.clip = noAmmo;
+                source.Play();
+                reloadIenti.SetActive(true);
             }
 
         }
