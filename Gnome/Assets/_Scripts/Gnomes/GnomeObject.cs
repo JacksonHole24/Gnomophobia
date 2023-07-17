@@ -9,14 +9,16 @@ public class GnomeObject : MonoBehaviour
 
     [SerializeField] Renderer gnomeRenderer;
     [SerializeField] MeshCollider gnomeCollider;
+    [SerializeField] List<AudioClip> breakSounds;
 
-    private float destroyTime = 1f;
+    private float destroyTime = 5f;
     private float timer = 0;
     private bool destroy = false;
 
     [ContextMenu("Break")]
     public void Break()
     {
+        GetComponent<SoundPlayer>().Play();
         gnomePart.Play();
         destroy = true;
         gnomeRenderer.enabled = false;

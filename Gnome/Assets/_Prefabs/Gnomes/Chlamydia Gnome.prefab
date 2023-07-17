@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3471132455587771326}
   - component: {fileID: 3447269254643548155}
   - component: {fileID: 5398253334400187022}
+  - component: {fileID: 3577864589624711642}
+  - component: {fileID: -2300837435025449626}
   m_Layer: 0
   m_Name: Chlamydia Gnome
   m_TagString: Untagged
@@ -102,6 +104,7 @@ MonoBehaviour:
   gnomePart: {fileID: 7879606595728285632}
   gnomeRenderer: {fileID: 3471132455587771326}
   gnomeCollider: {fileID: 5398253334400187022}
+  breakSounds: []
 --- !u!64 &5398253334400187022
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -116,6 +119,121 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: -1
   m_Mesh: {fileID: -1491770212225696383, guid: 77271c5ee2463f843b5204f5ef5993b9, type: 3}
+--- !u!82 &3577864589624711642
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110594140502282859}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-2300837435025449626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110594140502282859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f287f005c3fe20c42936e815fcf0c992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnAwake: 0
+  clips:
+  - {fileID: 8300000, guid: 6acf3b322b3ba174a893dcd79c43922d, type: 3}
+  - {fileID: 8300000, guid: f72a334755ae2d845b76dd5fa158713a, type: 3}
+  - {fileID: 8300000, guid: 057f73e38266a26468b9171b2acd8236, type: 3}
+  pitchRange: 1
+  basePitch: 1
 --- !u!1001 &4299947622212785425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,10 +241,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2333106840914397393}
     m_Modifications:
-    - target: {fileID: 2813302984655925736, guid: e4e064ed7b940b54ba99affd7adaaf37, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.997596
-      objectReference: {fileID: 0}
     - target: {fileID: 5274808247508899849, guid: e4e064ed7b940b54ba99affd7adaaf37, type: 3}
       propertyPath: m_Name
       value: gnome particle
