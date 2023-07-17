@@ -85,7 +85,7 @@ MonoBehaviour:
   pathCreator: {fileID: 0}
   endOfPathInstruction: 0
   currentSpeed: 10
-  defaultSpeed: 5
+  defaultSpeed: 10
 --- !u!114 &2058592093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ RectTransform:
   m_GameObject: {fileID: 688100746310983338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1.5580544, y: 1.5580544, z: 1.5580544}
+  m_LocalScale: {x: 2.2107313, y: 2.2107313, z: 2.2107313}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7942799015309480197}
@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57.6, y: -5.4}
+  m_AnchoredPosition: {x: 110, y: -9.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5455923153295862689
@@ -289,15 +289,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b2b1868bcd3cc9547bdb30f58fa8e12c, type: 2}
+  m_sharedMaterial: {fileID: -3894945804810373981, guid: b2b1868bcd3cc9547bdb30f58fa8e12c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279799296
+  m_fontColor: {r: 0, g: 0.5566038, b: 0.09276734, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 4635938481885784296}
   - component: {fileID: 1204412018350855539}
   - component: {fileID: 319561399216225771}
+  - component: {fileID: 5864905010812877707}
   m_Layer: 5
   m_Name: Time Canvas
   m_TagString: Untagged
@@ -638,6 +639,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5864905010812877707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527967202507618145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b469209e3f1f39443a1ba5d61894e827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 6005385563953780447}
+  offColour: {r: 0, g: 0.09411765, b: 0.015686275, a: 1}
+  onColour: {r: 0, g: 0.5568628, b: 0.09411765, a: 1}
 --- !u!1 &6618200566614617602
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,9 +904,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 853992717202065856}
     m_Modifications:
+    - target: {fileID: 488766188488436044, guid: ef99d7d13486d9e4c8eddfdc0a706e87, type: 3}
+      propertyPath: spinTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417917286174055946, guid: ef99d7d13486d9e4c8eddfdc0a706e87, type: 3}
+      propertyPath: spinTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5715048991317288968, guid: ef99d7d13486d9e4c8eddfdc0a706e87, type: 3}
       propertyPath: m_Name
       value: Spinners
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598630204348794133, guid: ef99d7d13486d9e4c8eddfdc0a706e87, type: 3}
+      propertyPath: spinTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6650161570311780575, guid: ef99d7d13486d9e4c8eddfdc0a706e87, type: 3}
       propertyPath: m_RootOrder
@@ -1264,6 +1292,10 @@ PrefabInstance:
     - target: {fileID: 1664124067518570558, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664124067600203459, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1664124067600203468, guid: d08cd4bf199af1b40bda154465f72566, type: 3}
       propertyPath: m_Layer

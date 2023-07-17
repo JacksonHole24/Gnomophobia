@@ -7,6 +7,8 @@ public class TimerManager : MonoBehaviour
 {
     public static TimerManager Instance { get; private set; }
 
+    private TimerUI timerUI;
+
     void CreateSingleton()
     {
         if (Instance != null && Instance != this)
@@ -25,12 +27,12 @@ public class TimerManager : MonoBehaviour
     {
         CreateSingleton();
 
-
+        timerUI = FindObjectOfType<TimerUI>();
     }
 
     public void RunAfterTime(Action function, float time)
     {
-        m_timers.Add(new ActiveTimer(function, time, this));
+        m_timers.Add(new ActiveTimer(function, time, this, timerUI));
     }
 
     public void DestroyTimer(ActiveTimer timer)
@@ -57,11 +59,15 @@ public class ActiveTimer
 
     [SerializeField] float m_counter = 0;
 
-    public ActiveTimer(Action function, float time, TimerManager timerManager)
+    private TimerUI timerUI;
+
+
+    public ActiveTimer(Action function, float time, TimerManager timerManager, TimerUI timerU)
     {
         m_functionToCall = function;
         m_timeUntilEnd = time;
         m_manager = timerManager;
+        timerUI = timerU;
     }
 
     public void UpdateTimer()
@@ -69,11 +75,13 @@ public class ActiveTimer
         if (m_counter >= m_timeUntilEnd)
         {
             m_functionToCall();
+            timerUI.SetTimerOff();
             m_manager.DestroyTimer(this);
         }
         else
         {
             m_counter += Time.deltaTime;
+            timerUI.SetTimerOn(m_timeUntilEnd - m_counter);
         }
     }
 }
