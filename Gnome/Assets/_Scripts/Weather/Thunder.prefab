@@ -75,7 +75,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: faf2eb8dfb3b443448736bded73aef32, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6381911689369384253}
-  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalRotation: {x: 0.19616088, y: 0.4126005, z: -0.09147132, w: 0.8848247}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -290,7 +290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf0c55cf6efce741a23efe57bb44e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionalLight: {fileID: 0}
   thunderSounds:
   - {fileID: 8300000, guid: c30c764ea8720b24b9a6aac3aba7b272, type: 3}
   - {fileID: 8300000, guid: 00afe4320dc7fbb42b45000e354ec9fb, type: 3}
@@ -299,14 +298,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 210e27bbd1b600e45a9737bae753c87d, type: 3}
   - {fileID: 8300000, guid: 9aa6b42976cff614f97849ec61f06226, type: 3}
   minIntensity: 0
-  maxIntensity: 7
+  maxIntensity: 2
   intensityIncreaseSpeed: 150
   intensityDecreaseSpeed: 15
   minFlickerIntensity: 3
   maxFlickerIntensity: 6
   flickerSpeed: 30
   minWaitTime: 1
-  maxWaitTime: 20
+  maxWaitTime: 15
   simultaneousStrikes: 3
 --- !u!82 &1998562021417122769
 AudioSource:
@@ -318,7 +317,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: faf2eb8dfb3b443448736bded73aef32, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
