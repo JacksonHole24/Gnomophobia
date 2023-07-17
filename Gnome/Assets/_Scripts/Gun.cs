@@ -68,6 +68,7 @@ public class Gun : MonoBehaviour
         }
     }
 
+    #region Display
     void DisplayLazerSight()
     {
         if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out RaycastHit hit, float.MaxValue, m_layerMask))
@@ -80,7 +81,9 @@ public class Gun : MonoBehaviour
     {
         m_ammoDisplayTMP.text = m_ammoAmount.ToString() + "/" + m_maxAmmoAmount.ToString();
     }
+    #endregion
 
+    #region Shooting/Reloading
     public void Reload(InputAction.CallbackContext context)
     {
         if (m_player.GetAmmoBoxes() > 0)
@@ -119,10 +122,11 @@ public class Gun : MonoBehaviour
 
                     StartCoroutine(SpawnTrail(trail, hit));
 
-                    if (hit.transform.GetComponent<GnomeObject>())
+                    GnomeObject gnome = hit.transform.GetComponent<GnomeObject>();
+                    if (gnome)
                     {
-
-
+                        m_player.AddScore(gnome.gnome.gnomeValue);
+                        Destroy(gnome.gameObject);
                     }
                 }
                 else
@@ -134,7 +138,9 @@ public class Gun : MonoBehaviour
         }
 
     }
+    #endregion
 
+    #region Trails
     IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit)
     {
         float time = 0;
@@ -173,4 +179,5 @@ public class Gun : MonoBehaviour
 
         Destroy(Trail.gameObject, Trail.time);
     }
+    #endregion
 }
