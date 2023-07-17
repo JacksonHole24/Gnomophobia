@@ -60,7 +60,9 @@ public class EventCollider : MonoBehaviour
     
     public UnityEvent Enter;
     public UnityEvent Exit;
-    
+
+    bool m_isCollided = false;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -81,7 +83,6 @@ public class EventCollider : MonoBehaviour
                 OnExit(pathFollower);
             }
         }
-
     }
 
     private void Update()
@@ -110,33 +111,44 @@ public class EventCollider : MonoBehaviour
 
     void OnEnter(PathFollower pathFollower)
     {
-        m_lastPathFollower = pathFollower;
-
-        m_previousSpeed = pathFollower.currentSpeed;
-        pathFollower.ChangeSpeed(m_targetSpeed, m_enterAcceleration);
-
-        if (m_exitEvent == ExitEvent.Timer)
+        if (!m_isCollided)
         {
-            TimerManager.Instance.RunAfterTime(OnExit, m_timeUntilExit);
-        }
+            m_isCollided = true;
 
-        Enter.Invoke();
+            m_lastPathFollower = pathFollower;
+
+            m_previousSpeed = pathFollower.currentSpeed;
+            pathFollower.ChangeSpeed(m_targetSpeed, m_enterAcceleration);
+
+            if (m_exitEvent == ExitEvent.Timer)
+            {
+                TimerManager.Instance.RunAfterTime(OnExit, m_timeUntilExit);
+            }
+
+            Enter.Invoke();
+        }
     }
 
     void OnExit(PathFollower pathFollower)
     {
-        m_hasStartedDelay = false;
-
-        if (m_onExit == global::OnExit.ReturnToDefaultSpeed)
+        if (m_isCollided)
         {
-            pathFollower.ChangeSpeed(pathFollower.defaultSpeed, m_exitAcceleration);
-        }
-        else if (m_onExit == global::OnExit.ReturnToPreviousSpeed)
-        {
-            pathFollower.ChangeSpeed(m_previousSpeed, m_exitAcceleration);
-        }
+            m_isCollided = false;
 
-        Exit.Invoke();
+            m_hasStartedDelay = false;
+
+            if (m_onExit == global::OnExit.ReturnToDefaultSpeed)
+            {
+                pathFollower.ChangeSpeed(pathFollower.defaultSpeed, m_exitAcceleration);
+            }
+            else if (m_onExit == global::OnExit.ReturnToPreviousSpeed)
+            {
+                Debug.Log(m_previousSpeed);
+                pathFollower.ChangeSpeed(m_previousSpeed, m_exitAcceleration);
+            }
+
+            Exit.Invoke();
+        }
     }
 
     void OnExit()
