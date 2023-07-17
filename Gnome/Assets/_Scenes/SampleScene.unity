@@ -2999,7 +2999,7 @@ AudioSource:
   m_GameObject: {fileID: 1936034760}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 0bc75dd4f70959b4ebfc3b1fff02d2a2, type: 2}
   m_audioClip: {fileID: 8300000, guid: b558f0586cc80014990ebb10ac4725f6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -3008,7 +3008,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 1128.2422
