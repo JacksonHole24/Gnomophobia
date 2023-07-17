@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     [Header("Score")]
     [SerializeField] int m_scoreAmount; // temporarily serialized
     [SerializeField] TextMeshProUGUI m_scoreDisplay;
+    [SerializeField] NumberSpinner hundredSpinner;
+    [SerializeField] NumberSpinner tenSpinner;
+    [SerializeField] NumberSpinner oneSpinner;
 
     [Header("Ammo")]
     [SerializeField] int m_maxAmmoBoxes = 3;
@@ -36,6 +39,24 @@ public class Player : MonoBehaviour
     public void DisplayScore()
     {
         m_scoreDisplay.text = "Score: " + m_scoreAmount.ToString();
+
+
+        if(m_scoreAmount > 0)
+        {
+            int hundreds = m_scoreAmount / 100;
+            int tens = (m_scoreAmount / 10) % 10;
+            int units = m_scoreAmount % 10;
+
+            hundredSpinner.Spin(hundreds);
+            tenSpinner.Spin(tens);
+            oneSpinner.Spin(units);
+        }
+        else
+        {
+            hundredSpinner.Spin(0);
+            tenSpinner.Spin(0);
+            oneSpinner.Spin(0);
+        }
     }
 
     #endregion

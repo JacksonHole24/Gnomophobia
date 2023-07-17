@@ -126,7 +126,7 @@ public class Gun : MonoBehaviour
                     if (gnome)
                     {
                         m_player.AddScore(gnome.gnome.gnomeValue);
-                        Destroy(gnome.gameObject);
+                        gnome.Break();
                     }
                 }
                 else

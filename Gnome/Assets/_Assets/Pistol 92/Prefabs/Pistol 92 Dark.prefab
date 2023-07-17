@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fireRate: 5
-  m_maxAmmoAmount: 15
+  m_maxAmmoAmount: 999999
   m_hitMarkerPrefab: {fileID: 88728230082801157, guid: f3b3cafdbaae06b439943e7af9fab747, type: 3}
   m_showLazerSight: 1
   m_ammoDisplayTMP: {fileID: 4175319315016007533}
@@ -1247,7 +1247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.431
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_LocalRotation.w
