@@ -165,8 +165,8 @@ MonoBehaviour:
   hundredSpinner: {fileID: 6753674226211086609}
   tenSpinner: {fileID: 4279912258557721102}
   oneSpinner: {fileID: 7367384254484878935}
-  m_maxAmmoBoxes: 3
-  m_ammoBoxes: 2
+  m_maxAmmoBoxes: 999
+  m_ammoBoxes: 999
   m_ammoBoxDisplay: {fileID: 0}
 --- !u!1 &78225941776626522
 GameObject:
