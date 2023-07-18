@@ -11,7 +11,7 @@ public class GnomeEye : MonoBehaviour
         player = FindObjectOfType<Player>().gameObject;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         transform.LookAt(player.transform.position);
     }
