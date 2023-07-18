@@ -84,7 +84,10 @@ public class Gun : MonoBehaviour
 
     void DisplayAmmo()
     {
-        m_ammoDisplayTMP.text = m_ammoAmount.ToString() + "/" + m_maxAmmoAmount.ToString();
+        if (m_ammoDisplayTMP)
+        {
+            m_ammoDisplayTMP.text = m_ammoAmount.ToString() + "/" + m_maxAmmoAmount.ToString();
+        }
     }
     #endregion
 
@@ -128,14 +131,12 @@ public class Gun : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(m_bulletSpawnPoint.position, m_bulletSpawnPoint.forward, out hit, float.MaxValue, m_layerMask))
                 {
-                    Debug.Log("Object hit: " + hit.transform);
-
                     StartCoroutine(SpawnTrail(trail, hit));
 
                     GnomeObject gnome = hit.transform.GetComponent<GnomeObject>();
                     if (gnome)
                     {
-                        m_player.AddScore(gnome.gnome.gnomeValue);
+                        m_player.AddScore(2/*gnome.gnome.gnomeValue*/);
                         gnome.Break();
                     }
                 }

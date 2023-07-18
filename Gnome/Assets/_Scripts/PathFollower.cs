@@ -72,5 +72,11 @@ namespace PathCreation.Examples
 
             accelerating = true;
         }
+
+        public void ChangeSpeed(float targetSpeed)
+        {
+            Debug.Log("Speed changed to " + targetSpeed);
+            ChangeSpeed(targetSpeed, 5);
+        }
     }
 }

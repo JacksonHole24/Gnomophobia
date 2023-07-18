@@ -38,9 +38,11 @@ public class Player : MonoBehaviour
 
     public void DisplayScore()
     {
-        m_scoreDisplay.text = "Score: " + m_scoreAmount.ToString();
-
-
+        if (m_scoreDisplay)
+        {
+            m_scoreDisplay.text = "Score: " + m_scoreAmount.ToString();
+        }
+        
         if(m_scoreAmount > 0)
         {
             int hundreds = m_scoreAmount / 100;
