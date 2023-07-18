@@ -339,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157788719}
   m_LocalRotation: {x: -0, y: 0.00000020861623, z: -0, w: -1}
-  m_LocalPosition: {x: 0.209, y: 4.543, z: 0.324}
+  m_LocalPosition: {x: -0.058, y: 4.774, z: 0.746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2895,6 +2895,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8068980543807309352}
     m_Modifications:
+    - target: {fileID: 192813544256802868, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -3886921104324010219, guid: 7f32f8e0dad07f441b402ab0c1d3ed9d, type: 3}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238211166786376998, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2598616724737233854, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
       propertyPath: m_Name
       value: RoundAbout_Spin_3
@@ -2943,6 +2975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8274856022252586487, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 613139662385462000, guid: 7f32f8e0dad07f441b402ab0c1d3ed9d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20d00f40fef6454399d5f85c536b1fe, type: 3}
 --- !u!4 &578325517283668626 stripped
