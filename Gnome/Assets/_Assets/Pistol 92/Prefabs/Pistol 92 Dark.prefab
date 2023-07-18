@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fireRate: 5
-  m_maxAmmoAmount: 999999
+  m_maxAmmoAmount: 10
   m_hitMarkerPrefab: {fileID: 88728230082801157, guid: f3b3cafdbaae06b439943e7af9fab747, type: 3}
   m_showLazerSight: 1
   m_ammoDisplayTMP: {fileID: 4175319315016007533}
@@ -436,8 +436,8 @@ MonoBehaviour:
   m_layerMask:
     serializedVersion: 2
     m_Bits: 9
-  m_shootInputAction: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_reloadInputAction: {fileID: 7896482121097324676, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_shootInputAction: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_reloadInputAction: {fileID: -391782849341435544, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   noAmmo: {fileID: 8300000, guid: 4d06eced086fd524ea234d70ea3f4a89, type: 3}
   reload: {fileID: 8300000, guid: 240c164967623b140aa7c1e61feeeab3, type: 3}
   source: {fileID: 5249313027846375592}
