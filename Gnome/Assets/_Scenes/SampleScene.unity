@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.058671705, g: 0.07306091, b: 0.1335924, a: 1}
+  m_IndirectSpecularColor: {r: 0.2920887, g: 0.35726595, b: 0.6231888, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: m_parent
       value: 
       objectReference: {fileID: 637138074}
+    - target: {fileID: 109434732392105323, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       propertyPath: m_Name
       value: Left Hand Model
@@ -1619,12 +1623,24 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6883644174262983119}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: db927b4d48a1a674db22601271efcd5a, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: 1e39b1fafd1ed0b4aa800d55e5833668, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6883644174262983118}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 1e39b1fafd1ed0b4aa800d55e5833668, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1634,12 +1650,24 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6883644174262983119}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: da24498c3b8e262488ca15013ca52d1d, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: b804c4ba003682644a345abf2c28638d, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6883644174262983118}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: b804c4ba003682644a345abf2c28638d, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1660,7 +1688,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1349128379}
+        m_TargetAssemblyTypeName: PathCreation.Examples.PathFollower, Assembly-CSharp
+        m_MethodName: ChangeSpeed
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -1691,6 +1731,17 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1349128379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 692435670, guid: 761d600d1e80341ac97f3228771ce637, type: 3}
+  m_PrefabInstance: {fileID: 1272057516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e2aa26a53c5424d8e74ee0f611fef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1353772960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1778772046747091670, guid: d150908c8b70cb843b480424dee99632, type: 3}
@@ -2716,6 +2767,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4175319315016007533, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_maxAmmoAmount
+      value: 10000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_shootInputAction
+      value: 
+      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_reloadInputAction
+      value: 
+      objectReference: {fileID: 7896482121097324676, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
 --- !u!850595691 &1891505592
@@ -3316,6 +3383,41 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8763520280445258500, guid: 935af0f94115c5846ae3122f7b6f7f49, type: 3}
   m_PrefabInstance: {fileID: 6334832962308096804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2076709081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8128587218497551928, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+  m_PrefabInstance: {fileID: 2111961782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2076709086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076709081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -745406591, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Trigger:
+    m_IsTriggerExpanded: 1
+    m_Type: 0
+    m_LifecycleEvent: 0
+    m_ApplyRules: 0
+    m_Rules:
+      m_Rules: []
+    m_TriggerBool: 0
+    m_InitTime: 5
+    m_RepeatTime: 5
+    m_Repetitions: 0
+    repetitionCount: 0
+  m_EventPayload:
+    m_IsEventExpanded: 1
+    m_StandardEventType: CustomEvent
+    m_Parameters:
+      m_Parameters: []
+    m_Name: 
 --- !u!1001 &2080554196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3484,6 +3586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Hand Model
       objectReference: {fileID: 0}
+    - target: {fileID: 5686134208196863108, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
 --- !u!4 &2084645535 stripped
@@ -3549,6 +3655,14 @@ PrefabInstance:
     - target: {fileID: 1778776706986578100, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175319315016007533, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415106791730028666, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
+      propertyPath: m_maxAmmoAmount
+      value: 10000000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fab9dcca6a961845a178028d664ab59, type: 3}
@@ -3803,6 +3917,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1324670480}
     m_Modifications:
+    - target: {fileID: 3111772170517747910, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b804c4ba003682644a345abf2c28638d, type: 2}
+    - target: {fileID: 3692888156108612434, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b804c4ba003682644a345abf2c28638d, type: 2}
     - target: {fileID: 5961695561562969916, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
       propertyPath: m_Name
       value: lever Base
@@ -3856,6 +3978,16 @@ PrefabInstance:
 --- !u!4 &6883644174262983117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6482898859835755910, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
+  m_PrefabInstance: {fileID: 6883644174262983116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6883644174262983118 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3692888156108612434, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
+  m_PrefabInstance: {fileID: 6883644174262983116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6883644174262983119 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3111772170517747910, guid: 3b0c25879693fee41a9286eef9e76179, type: 3}
   m_PrefabInstance: {fileID: 6883644174262983116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7548152319589535478
