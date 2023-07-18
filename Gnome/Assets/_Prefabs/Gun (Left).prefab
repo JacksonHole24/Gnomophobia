@@ -10810,7 +10810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fireRate: 5
-  m_maxAmmoAmount: 10000000
+  m_maxAmmoAmount: 10
   m_hitMarkerPrefab: {fileID: 88728230082801157, guid: f3b3cafdbaae06b439943e7af9fab747, type: 3}
   m_showLazerSight: 1
   m_ammoDisplayTMP: {fileID: 1252721763329982200}
